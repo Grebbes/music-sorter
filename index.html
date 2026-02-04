@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script defer src="main.js"></script>
+    <script defer src="songs.js"></script>
+    <script defer src="sort.js"></script>
     <title>Music Sorter</title>
   </head>
   <body>
@@ -12,15 +14,15 @@
       <h1>Music Sorter</h1>
 
       <div class="genre-buttons">
-        <button class="genre-btn active" data-genre="all">All</button>
-        <button class="genre-btn" data-genre="rock">Rock</button>
-        <button class="genre-btn" data-genre="pop">Pop</button>
-        <button class="genre-btn" data-genre="jazz">Jazz</button>
-        <button class="genre-btn" data-genre="hiphop">Hip-Hop</button>
+        <button class="genre-btn active" id="all">All</button>
+        <button class="genre-btn" id="rock">Rock</button>
+        <button class="genre-btn" id="pop">Pop</button>
+        <button class="genre-btn" id="jazz">Jazz</button>
+        <button class="genre-btn" id="hiphop">Hip-Hop</button>
       </div>
 
-      <div class="songs-container">
-        <div class="song-card">
+      <div class="songs-container" id="songs-container">
+        <!--  <div class="song-card">
           <h3>Bohemian Rhapsody</h3>
           <p>Queen</p>
           <span class="genre-tag">Rock</span>
@@ -66,7 +68,7 @@
           <h3>HUMBLE.</h3>
           <p>Kendrick Lamar</p>
           <span class="genre-tag">Hip-Hop</span>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>

@@ -56,26 +56,6 @@ body {
   color: white;
 }
 
-.genre-btn[data-genre="rock"]:hover,
-.genre-btn[data-genre="rock"].active {
-  background-color: #ff6b6b;
-}
-
-.genre-btn[data-genre="pop"]:hover,
-.genre-btn[data-genre="pop"].active {
-  background-color: #ff9ff3;
-}
-
-.genre-btn[data-genre="jazz"]:hover,
-.genre-btn[data-genre="jazz"].active {
-  background-color: #feca57;
-}
-
-.genre-btn[data-genre="hiphop"]:hover,
-.genre-btn[data-genre="hiphop"].active {
-  background-color: #48dbfb;
-}
-
 .songs-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
