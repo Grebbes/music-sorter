@@ -19,56 +19,63 @@
         <button class="genre-btn" id="pop">Pop</button>
         <button class="genre-btn" id="jazz">Jazz</button>
         <button class="genre-btn" id="hiphop">Hip-Hop</button>
+        <button class="genre-btn" id="newSong">Add new Song</button>
       </div>
 
-      <div class="songs-container" id="songs-container">
-        <!--  <div class="song-card">
-          <h3>Bohemian Rhapsody</h3>
-          <p>Queen</p>
-          <span class="genre-tag">Rock</span>
-        </div>
+      <div class="songs-container" id="songs-container"></div>
+    </div>
 
-        <div class="song-card">
-          <h3>Blinding Lights</h3>
-          <p>The Weeknd</p>
-          <span class="genre-tag">Pop</span>
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Add New Song</h2>
+          <button class="close-btn" id="close-btn">&times;</button>
         </div>
+        <div class="modal-body">
+          <form class="add-song-form" id="add-song-form">
+            <div class="input-group">
+              <label for="song-title">Song Title</label>
+              <input
+                type="text"
+                id="song-title"
+                name="title"
+                placeholder="Enter song title"
+                required
+              />
+            </div>
 
-        <div class="song-card">
-          <h3>Take Five</h3>
-          <p>Dave Brubeck</p>
-          <span class="genre-tag">Jazz</span>
+            <div class="input-group">
+              <label for="song-artist">Artist</label>
+              <input
+                type="text"
+                id="song-artist"
+                name="artist"
+                placeholder="Enter artist name"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="song-genre">Genre</label>
+              <select id="song-genre" name="genre" required>
+                <option value="">Select a genre</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+                <option value="hiphop">Hip-Hop</option>
+              </select>
+            </div>
+
+            <div class="modal-buttons">
+              <button type="button" class="cancel-btn" id="cancel-btn">
+                Cancel
+              </button>
+              <button type="submit" class="add-btn" id="add-btn">
+                Add Song
+              </button>
+            </div>
+          </form>
         </div>
-
-        <div class="song-card">
-          <h3>Lose Yourself</h3>
-          <p>Eminem</p>
-          <span class="genre-tag">Hip-Hop</span>
-        </div>
-
-        <div class="song-card">
-          <h3>Stairway to Heaven</h3>
-          <p>Led Zeppelin</p>
-          <span class="genre-tag">Rock</span>
-        </div>
-
-        <div class="song-card">
-          <h3>Shape of You</h3>
-          <p>Ed Sheeran</p>
-          <span class="genre-tag">Pop</span>
-        </div>
-
-        <div class="song-card">
-          <h3>Fly Me to the Moon</h3>
-          <p>Frank Sinatra</p>
-          <span class="genre-tag">Jazz</span>
-        </div>
-
-        <div class="song-card">
-          <h3>HUMBLE.</h3>
-          <p>Kendrick Lamar</p>
-          <span class="genre-tag">Hip-Hop</span>
-        </div> -->
       </div>
     </div>
   </body>
