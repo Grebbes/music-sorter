@@ -44,7 +44,7 @@ const songs = [
   {
     id: 8,
     title: "Humble",
-    artist: "Kendreick Lamar",
+    artist: "Kendrick Lamar",
     genre: "Hip-Hop",
   },
 ];
@@ -55,4 +55,30 @@ function loadSongs() {
   songs.forEach((song) => {
     songsContainer.innerHTML += `<div class="song-card"><h3>${song.title}</h3><p>${song.artist}</p><span class="genre-tag">${song.genre}</span></div>`;
   });
+}
+
+function addSongPopUp() {
+  const addSongBtn = document.getElementById("newSong");
+  const songPopUp = document.getElementById("modal-overlay");
+
+  addSongBtn.onclick = () => {
+    songPopUp.classList.add("active");
+    closePopUp();
+  };
+}
+
+function closePopUp() {
+  const cancelBtn = document.getElementById("cancel-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const modalOverlay = document.getElementById("modal-overlay");
+
+  if (modalOverlay && cancelBtn && closeBtn) {
+    cancelBtn.onclick = () => {
+      modalOverlay.classList.remove("active");
+    };
+
+    closeBtn.onclick = () => {
+      modalOverlay.classList.remove("active");
+    };
+  }
 }
