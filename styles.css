@@ -126,7 +126,6 @@ body {
   }
 }
 
-/* Modal Popup Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -280,7 +279,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* Responsive modal */
 @media (max-width: 600px) {
   .modal {
     width: 95%;
